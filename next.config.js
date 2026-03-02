@@ -5,6 +5,7 @@ const nextConfig = {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       "@react-native-async-storage/async-storage": require.resolve("./utils/asyncStorageShim.ts"),
+      "pino-pretty": require.resolve("./utils/pinoPrettyShim.ts"),
     };
     config.resolve.fallback = {
       ...config.resolve.fallback,
