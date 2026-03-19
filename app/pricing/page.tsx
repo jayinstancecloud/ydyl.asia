@@ -60,32 +60,56 @@ export default function PricingPage() {
           </div>
 
           <div className="stack-grid">
-            <article className="stack-card">
-              <h3>Pilot</h3>
-              <p>Best for individual teams validating YDYL on a single initiative.</p>
+            <article className="stack-card pricing-tier pricing-tier--community">
+              <h3>Community</h3>
+              <p className="pricing-tier-subtitle">Best for individuals</p>
+              <p className="pricing-tier-price">Free.</p>
               <ul>
-                <li>One program, up to a few dozen projects</li>
-                <li>Sandbox + staging environments</li>
-                <li>Shared infrastructure and standard support</li>
+                <li>Support for 20+ chains</li>
+                <li>Load balanced RPC proxy layer</li>
+                <li>Enhanced monitoring</li>
+                <li>Metrics and analytics dashboards</li>
+                <li>Community subgraphs and data models</li>
+                <li>TPS: 20 requests / 10 seconds</li>
+                <li>Email support</li>
               </ul>
+              <a className="btn primary pricing-tier-button" href="/#contact">
+                Try It Free
+              </a>
             </article>
-            <article className="stack-card">
-              <h3>Portfolio</h3>
-              <p>Best for ministries or agencies running multi‑year portfolios.</p>
+
+            <article className="stack-card pricing-tier pricing-tier--developer">
+              <h3>Developer</h3>
+              <p className="pricing-tier-subtitle">Best for small team and medium-sized projects</p>
+              <p className="pricing-tier-price">Pay as you go. Usage based.</p>
               <ul>
-                <li>Multiple programs and regions</li>
-                <li>Higher throughput Data API limits</li>
-                <li>Priority support and account team</li>
+                <li>Everything in starter plan</li>
+                <li>Unlimited custom subgraph indexing</li>
+                <li>Unlimited community data querying</li>
+                <li>TPS: 50 requests / 10 seconds</li>
+                <li>Priority email support</li>
               </ul>
+              <a className="btn primary pricing-tier-button" href="/#contact">
+                Get Started
+              </a>
             </article>
-            <article className="stack-card">
-              <h3>Ecosystem</h3>
-              <p>Best for cross‑border, multi‑stakeholder initiatives.</p>
+
+            <article className="stack-card pricing-tier pricing-tier--enterprise">
+              <h3>Enterprise</h3>
+              <p className="pricing-tier-subtitle">Best for large projects operating at enterprise scale</p>
+              <p className="pricing-tier-price">Custom Pricing</p>
               <ul>
-                <li>Multi‑country coordination and data residency options</li>
-                <li>Dedicated environments and custom SLAs</li>
-                <li>Joint roadmap and integration support</li>
+                <li>Everything in Developer plan</li>
+                <li>Optional dedicated environment</li>
+                <li>0xDb, dedicated indexing access</li>
+                <li>Custom API and database sync</li>
+                <li>Custom query limit</li>
+                <li>99.9% uptime, sub-50ms latency, custom SLA support</li>
+                <li>Email, Slack, Telegram support</li>
               </ul>
+              <a className="btn primary pricing-tier-button" href="/#contact">
+                Contact Sales
+              </a>
             </article>
           </div>
         </section>

@@ -398,6 +398,83 @@ main {
   text-align: center;
 }
 
+.pricing-tier {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.pricing-tier::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(56, 189, 248, 1);
+}
+
+.pricing-tier--community::before {
+  background: linear-gradient(to right, rgba(34, 197, 94, 1), rgba(16, 185, 129, 1));
+}
+
+.pricing-tier--developer::before {
+  background: linear-gradient(to right, rgba(245, 158, 11, 1), rgba(250, 204, 21, 1));
+}
+
+.pricing-tier--enterprise::before {
+  background: linear-gradient(to right, rgba(59, 130, 246, 1), rgba(99, 102, 241, 1));
+}
+
+.pricing-tier h3 {
+  text-align: left;
+  margin: 0 0 8px;
+}
+
+.pricing-tier-subtitle {
+  color: var(--muted);
+  margin: 0 0 10px;
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.pricing-tier-price {
+  margin: 0 0 12px;
+  font-size: 1.12rem;
+  font-weight: 750;
+}
+
+.pricing-tier ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.pricing-tier li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.pricing-tier li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.08em;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.pricing-tier-button {
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+}
+
 /* API reference layout */
 .api-layout {
   display: grid;
